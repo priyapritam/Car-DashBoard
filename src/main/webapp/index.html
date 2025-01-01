@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Car DashBoard</title>
+<style>
+/* General Page Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+/* Center Content */
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+h1 {
+	color: #005dff;
+	margin-bottom: 20px;
+	font-size: 2em;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	border-right: .15em solid #005dff;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: typing 3.5s steps(26, end), stop-caret 3.5s steps(1, end) forwards;
+}
+
+/* Typing animation */
+@keyframes typing {
+	from { width: 0; }
+	to { width: 100%; }
+}
+
+/* Stop caret after typing */
+@keyframes stop-caret {
+	from { border-color: #005dff; }
+	to { border-color: transparent; }
+}
+
+a {
+	text-decoration: none;
+}
+
+input[type="submit"] {
+	background: linear-gradient(90deg, #4E54C8, #8F94FB);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin: 15px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+
+footer {
+	margin-top: 30px;
+	padding: 20px;
+	background: linear-gradient(90deg, #4E54C8, #8F94FB);
+	color: #fff;
+	border-radius: 0 0 10px 10px;
+}
+
+footer h2 {
+	margin-bottom: 10px;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer li {
+	margin: 5px 0;
+}
+
+footer a {
+	color: #ffdd57;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+	<h1>Welcome to the Car DashBoard.</h1>
+	<a href="addcar.jsp"><input type="submit" value="ADD"></a> 
+	<a href="displaycar"><input type="submit" value="DISPLAY"></a>
+	
+	<footer>
+            <h2>Author</h2>
+            <ul>
+                <li><strong>Name:</strong> Priya Pritam Behera</li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/priyapritam" target="_blank">https://github.com/priyapritam</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priyapritam" target="_blank">https://www.linkedin.com/in/priyapritam</a></li>
+            </ul>
+        </footer>
+    </div>
+	</div>
+</body>
+</html>
