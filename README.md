@@ -2,7 +2,7 @@
 
 A feature-rich **web-based application** for managing car details, built using **Java (JSP & Servlets)** and **MySQL**. This project implements full CRUD operations and provides an intuitive interface for adding, viewing, updating, and deleting car records.
 
----
+
 
 ## 🚀 Features
 
@@ -12,7 +12,6 @@ A feature-rich **web-based application** for managing car details, built using *
 - **Delete Cars**: Remove unwanted car records with ease.
 - **Error Handling**: Ensures robust interactions and database integrity.
 
----
 
 ## 🛠️ Tech Stack
 
@@ -21,10 +20,10 @@ A feature-rich **web-based application** for managing car details, built using *
 - **Database**: MySQL
 - **Web Server**: Apache Tomcat
 
----
+
 
 ## 📂 Folder Structure
-
+```
 Car-DashBoard/
 ├── src/
 │   ├── com.jsp.car/
@@ -41,8 +40,11 @@ Car-DashBoard/
 ├── sql/
 │   └── servlet_cardb.sql (Database schema)
 └── README.md
+```
 
----
+## 📽️ Output
+
+https://github.com/user-attachments/assets/488005cc-d08f-4c5c-853a-d9b032db80a7
 
 ## 📦 How to Run
 
@@ -63,19 +65,23 @@ Create a database named servlet_cardb.
 Import the servlet_cardb.sql file to create the car table.
 4. Update database credentials in the servlets:
 
-conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/servlet_cardb", "yourUsername", "yourPassword");
+```java
+DriverManager.getConnection("jdbc:mysql://localhost:3306/servlet_cardb", "yourUsername", "yourPassword");
+```
 
 6. Deploy the project to Apache Tomcat.
 7. Start the server and access the app at:
 http://localhost:8080/Car-DashBoard
 
----
+
 ## 📚Database Schema
+```
 CREATE DATABASE servlet_cardb;
-CREATE DATABASE servlet_cardb;
+```
 
 USE servlet_cardb;
 
+```
 CREATE TABLE car (
     car_id INT PRIMARY KEY,
     car_model VARCHAR(50),
@@ -83,8 +89,8 @@ CREATE TABLE car (
     car_color VARCHAR(30),
     car_price INT
 );
+```
 
----
 
 ## 🌟 Highlights
 * Robust CRUD functionality.
